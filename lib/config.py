@@ -38,7 +38,8 @@ OPTIONS = {
     "clearscr"  : ("on", "clear screen for each context display"),
     "verbose"   : ("off", "show detail execution of commands, e.g: on|off"),
     "debug"     : ("off", "show detail error of peda commands, e.g: on|off"),
-    "_teefd"    : ("", "internal use only for tracelog/crashlog writing")
+    "_teefd"    : ("", "internal use only for tracelog/crashlog writing"),
+    "real" : ("off", "use real mode addresses"),
 }
 
 ## END OF SETTINGS ##

@@ -507,6 +507,10 @@ class PEDA(object):
                 return None
             else:
                 result = to_int(regs[0].split()[1])
+                if((r == "pc" or r == "rip" or r == "eip" or r == "ip") and config.Option.get("real") == "on"):
+                    cs = self.getreg("cs") << 4
+                    return cs + result
+                    
                 return result
 
         return None
